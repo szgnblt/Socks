@@ -4,23 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="custom.js"></script>
   <title>VueJs Tutorial</title>
 </head>
 <body>
   <div id="app">
     <h1>{{product}}</h1>
     <p>{{description}}</p>
+    <span>{{hello()}}</span>
   </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script>
-  var app = new Vue({
-    el:'#app',
-    data:{
-      product:'Salıncak',
-      description : "bu bir deneme yazisidir"
-    },
-  })
-</script>
-
 </html>
